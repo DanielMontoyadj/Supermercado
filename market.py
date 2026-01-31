@@ -84,14 +84,16 @@ if st.button("Generar factura"):
 
 #¿Qué hace st.session_state?
 #= Me guarda los datos cada vez que el usuario realiza un clic y
-# me ayuda a ir acumulando en la tabla
+# me ayuda a ir acumulando los productos en la tabla
 
 #¿Qué hace calcular_subtotal()?
-#= Me va acumulando los datos ingresados al formulario y me los muestra en una tabla
+#= Me procesa la informacion antes ingresada, cumple con la funcion calcular el subtotal a pagar,
+#es decir no toma en cuenta el impuesto, con ello agrega esa informacion a la tabla
 
 #¿Por qué se usa st.form()?
-#= Me permite ingresar datos al formulario, que se guarden y al utilizar el boton,
-#st.form_submit_button() enviarlos al formulario.
+#= Me permite ingresar datos al formulario y cuando utiliza el boton 
+#st.form_submit_button() los envia a la tabla.
 
 #¿Qué se muestra con st.dataframe()?
-#= Me permite mostrar los datos en un formato de tabular de manera ordenada
+#= Me va a permitir mostrar los datos de manera ordenada en un formato de tabla.
+
