@@ -82,7 +82,16 @@ if st.button("Generar factura"):
         st.write(f"**Total a Pagar:** L.{total_pagar:.2f}")
 
 
-#quitar las tablas que se genera otra vez
-#limpie el formulario
-#calcule el impuesto
-#deactivate
+#¿Qué hace st.session_state?
+#= Me guarda los datos cada vez que el usuario realiza un clic y
+# me ayuda a ir acumulando en la tabla
+
+#¿Qué hace calcular_subtotal()?
+#= Me va acumulando los datos ingresados al formulario y me los muestra en una tabla
+
+#¿Por qué se usa st.form()?
+#= Me permite ingresar datos al formulario, que se guarden y al utilizar el boton,
+#st.form_submit_button() enviarlos al formulario.
+
+#¿Qué se muestra con st.dataframe()?
+#= Me permite mostrar los datos en un formato de tabular de manera ordenada
